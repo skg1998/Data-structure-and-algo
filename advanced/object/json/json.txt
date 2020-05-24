@@ -1,0 +1,3 @@
+JSON is a array of object
+no comment allow in json file
+6 datatype can be use in json 
