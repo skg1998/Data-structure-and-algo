@@ -1,0 +1,11 @@
+Hashmap is  unique type of data structure use to store a key value pair 
+like in javascript object do , or in python dictonary dictonary
+
+syntax
+HashMap<String ,Integer > map = new HashMap<>();
+
+
+add in HashMap
+map.put(japan , 200);
+
+map.get("key");  // value of given key

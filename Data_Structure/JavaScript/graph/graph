@@ -1,0 +1,5 @@
+graph
+
+//Representation of graph 
+Adjacent Matrix  : not a good way of Representation of graph  because of  lot of memory wastee
+Adjacent List 

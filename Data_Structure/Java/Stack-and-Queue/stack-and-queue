@@ -1,0 +1,14 @@
+//define a stack
+stack<Integer> st = new stack<>()
+
+//add element in stack
+st.push();
+
+## size of stack 
+size()
+
+## top element of stack
+peek()
+
+## remove element from stack
+pop()   // by default it will return the deleted element
