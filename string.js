@@ -10,3 +10,5 @@
 // indexOf()
 // lastIndexOf()
 
+console.log('string ');
+

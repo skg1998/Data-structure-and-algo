@@ -1,0 +1,34 @@
+their is atmost one public class in a file 
+name of file must  be on public class name 
+if their is no any public class in file use any class of file
+
+
+package is grouping mechnism , ecsulasum mechnism related classes and interfaces  into single unit know as package
+
+
+How to write package statement
+ 
+Naming conflict
+Modularity
+Maintability
+Scurity
+
+
+package com.sahil.js;
+
+public class Test{
+    public static void main(String[] args){
+        System.out.print("Package Demo");
+    }
+}
+
+Compile package 
+javac -d . Test.java 
+
+Run package
+java com.sahil.js.Test
+
+only one package is allowed in a file 
+package is always on top in a file before import 
+
+

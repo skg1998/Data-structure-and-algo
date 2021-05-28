@@ -1,0 +1,17 @@
+Top level classes 
+public    :  access anywhere inside or outside package
+default   : access only inside a package 
+abstruct :  method which is yet only declaration not for implitation
+final    
+strictfp
+
+
+
+inner classes
+private
+protected
+static
+
+
+Abstruct method : method which is only declaration not for implimentation
+Abstruct class : partially implimented class   , instancecation is not posible
