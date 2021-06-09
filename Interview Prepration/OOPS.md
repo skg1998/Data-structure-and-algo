@@ -71,3 +71,70 @@ Elf.prototype.attack = function(){
 
 const sera = new Elf('sarah', 'fireworks');
 ```
+
+### ES6 Class
+
+> New Feature added in ES6
+
+```
+class Elf(name, weapon){
+    constructor(name, weapon){
+        this.name = name;
+        this.weapon = weapon;
+    }
+
+    attack(){
+        return `${this.name} attack with ${this.weapon}`
+    }
+}
+
+const peter = new Elf('Peter', 'Stones')
+console.log(pete instanceof Elf)  // true
+const sam = new Elf('Sam', 'fire')
+
+```
+
+### this
+
+```
+//new Binding
+function Person(){
+    this.name = name;
+    this.age = age;
+}
+const person1 = new Person('test', 34)
+
+
+//implicit binding
+const person = {
+    name : 'test',
+    age: 42,
+    hi(){
+        console.log('hi' , this. name)
+    }
+}
+
+
+//explicit binding
+const person = {
+    name : 'test',
+    age: 42,
+    hi(){
+        console.log('hi' , this.setTimeOut)
+    }.bind(window)
+}
+
+
+//Arrow function
+const person4 = {
+    name: 'person',
+    age: 40,
+    hi: function(){
+        var inner = () => {
+            console.log(this.name);
+        }
+        return inner();
+    }
+}
+person4.hi();
+```
