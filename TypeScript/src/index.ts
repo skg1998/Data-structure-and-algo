@@ -64,7 +64,10 @@ function log(message: string | number): void {
   console.log(message);
 }
 
+/*********************************************************************** */
 //Interface
+// Interfaces in typescript are used to define a structure of an object
+/*********************************************************************** */
 interface UserInterface {
   readonly id: number;
   name: string;
