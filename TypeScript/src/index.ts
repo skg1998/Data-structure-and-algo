@@ -1,13 +1,21 @@
 //configuration file : tsc --init
 
 /** ***************************************************************************** */
-//type infernce
+//type annotations: code we add to tell typescript what type of value a variable will refer to
+/******************************************************************************* */
+
+/** ***************************************************************************** */
+//type infernce: TypeScript tries to figure out what type of value a variable refer to
 /******************************************************************************* */
 let Id: number = 5;
 let company: string = 'Barozgaar';
 let isPublished: boolean = false;
 let income: any = 50000;
+let unde: undefined = undefined;
+let nul: null = null;
+let now: Date = new Date();
 let ids: number[] = [1, 2, 3, 4, 5]; //array
+let color: string[] = ['red', 'blue', 'green'];
 let person: [number, string, boolean] = [1, 'topi', true]; // Tuples
 let employ: [number, string][] = [
   [1, 'dev'],
@@ -45,6 +53,8 @@ type User = {
   id: number;
   name: string;
 };
+
+//Object literal
 const user: User = { id: 1, name: 'user' };
 
 /** ***************************************************************************** */
@@ -54,7 +64,18 @@ let cid: any = 1;
 let customerId = <number>cid; // way 1
 let productId = cid as number; // way 2
 
+/** ***************************************************************************** */
 //Function
+/******************************************************************************* */
+const logNumber: (id: number) => void = (id: number) => {
+  // void
+  console.log(id);
+};
+
+const throwError = (message: string): never => {
+  // never : only use when you never expect a return anything ever
+  throw new Error(message);
+};
 
 function add(x: number, y: number): number {
   return x + y;
@@ -63,6 +84,18 @@ function add(x: number, y: number): number {
 function log(message: string | number): void {
   console.log(message);
 }
+
+// Object Destructuring with annotations
+const logWeather = ({
+  date,
+  weather,
+}: {
+  date: Date;
+  weather: string;
+}): void => {
+  console.log(date);
+  console.log(weather);
+};
 
 /*********************************************************************** */
 //Interface
