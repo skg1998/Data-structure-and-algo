@@ -1,3 +1,7 @@
+# Functional Programming
+
+>
+
 # Higher Order Function
 
 > Function which takes another function as an argument is called Higher Order Function and another function is know as callback function
